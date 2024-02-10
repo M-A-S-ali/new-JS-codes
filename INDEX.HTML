@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third Element</li>
+    </ul>
+    <script>
+        //Root Node
+        // console.log(document.documentElement);
+        // console.log(document.body);
+        // console.log(document.head);
+
+        //childern
+        // console.log(document.body.childNodes);
+        // console.log(document.body.children);
+        const bodyChild = document.body.children;
+        bodyChild.style.backgroundColor = "blue";
+
+    </script>
+</body>
+</html>

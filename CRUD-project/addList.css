@@ -1,0 +1,27 @@
+.container{
+    margin-top: 50px;
+    width: 50%;
+}
+.btn-outline-secondary{
+    background-color: green;
+    color: black;
+}
+.Item{
+    flex-grow: 1;
+}
+.editBtn{
+    background-color: yellow;
+    margin: 10px;
+    border-radius: 10px;
+}
+.removeBtn{
+    background-color: red;
+    color:antiquewhite;
+    margin: 10px;
+    border-radius: 10px;
+}
+.isText{
+    text-align: center;
+    padding-top: 120px;
+    
+}
