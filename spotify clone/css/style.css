@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.left {
+    width: 25vw;
+    padding: 8px;
+}
+
+.right {
+    width: 75vw;
+}
+
+.home ul li {
+    display: flex;
+    width: 20px;
+    list-style: none;
+    gap: 20px;
+    padding: 12px 2px;
+}
+
+.logo {
+    padding-top: 24px;
+    margin-left: 20px;
+}
+
+.home ul {
+    margin-left: 20px;
+    padding: 8px 0px;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.library {
+    min-height: 25vw;
+    position: relative;
+}
+
+.library img[alt~="library"] {
+    width: 22px;
+    padding-left: 20px;
+}
+
+.library img[alt~="+button"] {
+    width: 22px;
+    background-color: #121212;
+}
+
+.footer {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.footer a {
+    color: grey;
+    font-size: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.navigator {
+    display: flex;
+    gap: 20px;
+}
+
+.LS-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.login {
+    width: 80px;
+    height: 30px;
+}
+
+.spotifyPlaylist h1 {
+    padding: 10px 25px;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    max-height: 30vw;
+    overflow: scroll;
+}
+
+.card {
+    width: 225px;
+    margin: 5px 25px;
+    background-color: #131313;
+    padding: 15px;
+}
+
+.card img {
+    object-fit: fill;
+    width: 100%;
+    position: relative;
+}
+
+.svgButton svg {
+    position: absolute;
+    width: 50px;
+    bottom: 120px;
+    right: 665px;
+    transition: 1s;
+}

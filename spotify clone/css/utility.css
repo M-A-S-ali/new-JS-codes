@@ -1,0 +1,63 @@
+
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+.round{
+    border-radius: 5px;
+}
+.uniquifier {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+.c-grey-filter{
+    filter: invert(72%) sepia(0%) saturate(0%) hue-rotate(244deg) brightness(92%) contrast(94%);
+}
+.c-grey{
+    color: #a7a7a7;
+}
+.bg-playlist{
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+  background-color: #2A2A2A; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; 
+  border-radius: 6px;
+  border: 3px solid #2A2A2A; 
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #2A2A2A;
+}
+
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
