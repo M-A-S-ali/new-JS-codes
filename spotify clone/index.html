@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpotifyClone</title>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,37 +19,42 @@
     <div class="container flex">
         <div class="left ">
             <div class="home bg-grey round">
-                <div class="logo"><img class="invert " src="svg's/logo.svg" alt="Logo"></div>
+                <div class="close">
+                    <img src="svg/close.svg" alt="">
+                </div>
+                <div class="logo"><img class="invert " src="svg/logo.svg" alt="Logo"></div>
                 <ul>
-                    <li><img class="invert" src="svg's/home.svg" alt="Home">Home</li>
-                    <li><img class="invert" src="svg's/search.svg" alt="Search">Search</li>
+                    <li><img class="invert" src="svg/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="svg/search.svg" alt="Search">Search</li>
                 </ul>
             </div>
 
             <div class="library bg-grey round c-grey">
                 <div class="heading">
-                    <img class="c-grey-filter" src="svg's/library.svg" alt="library">Your
+                    <img class="c-grey-filter" src="svg/library.svg" alt="library">Your
                     Library
-                    <div class="+button">
-                        <button><img class="invert" src="svg's/+button.svg" alt="+button"></button>
-                    </div>
                 </div>
-                <div class="footer">
-                    <a href="https://www.spotify.com/us/legal/">Legal</a>
-                    <a href="https://www.spotify.com/us/safetyandprivacy/">Safety & Privacy Center</a>
-                    <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a>
-                    <a href="https://www.spotify.com/us/legal/cookies-policy/">Cookies</a>
-                    <a href="https://www.spotify.com/us/legal/privacy-policy/#s3">About Ads</a>
-                    <a href="https://www.spotify.com/us/accessibility/">Accessibility</a>
-                    <a href="https://www.spotify.com/us/legal/notice-at-collection/">Notice at Collection</a>
+                <div class="songList">
+                    <ul>
+                    </ul>
                 </div>
             </div>
-
-
+            <div class="footer round">
+                <a href="https://www.spotify.com/us/legal/">Legal</a>
+                <a href="https://www.spotify.com/us/safetyandprivacy/">Safety & Privacy Center</a>
+                <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.spotify.com/us/legal/cookies-policy/">Cookies</a>
+                <a href="https://www.spotify.com/us/legal/privacy-policy/#s3">About Ads</a>
+                <a href="https://www.spotify.com/us/accessibility/">Accessibility</a>
+                <a href="https://www.spotify.com/us/legal/notice-at-collection/">Notice at Collection</a>
+            </div>
         </div>
         <div class="right ">
             <div class="header bg-grey round">
                 <div class="navigator">
+                    <div class="hamburger">
+                        <img src="svg/burger.svg" alt="">
+                    </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -59,137 +65,40 @@
                     </svg>
                 </div>
                 <div class="LS-buttons">
-                    <button>Sign Up</button>
-                    <button class="login">LogIn</button>
+                    <button class="signup bg-grey">Sign Up</button>
+                    <button class="login">Log in</button>
                 </div>
             </div>
             <div class="spotifyPlaylist bg-playlist">
                 <h1>Spotify Playlist</h1>
                 <div class="cardContainer">
-                    <div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <div class="svgButton">
-                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="50" r="50" fill="green" />
-                                <polygon points="40,30 70,50 40,70" fill="black" />
-                            </svg>
 
-                        </div>
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+
                     </div>
+                </div>
+                <div class="buttonInfo">
+                    <div class="songInfo">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
                     </div>
-                    <div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
-                    </div><div class="card round">
-                        <img class="round" src="image/ab67616d00001e02d9bcf5565005950b353bc9cf.jpg" alt="cardImg">
-                        <h3>Smack That</h3>
-                        <h4>Akon,Eminem</h4>
+                    <div class="songButton">
+                        <button id="previous"><img src="svg/previous.svg" alt="previousButton"></button>
+                        <button id="play"><img src="svg/play.svg" alt="playButton"></button>
+                        <button id="next"><img src="svg/next.svg" alt="nextButton"></button>
+                    </div>
+                    <div class="songTime">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 body {
     background-color: black;
     color: white;
-
+    height: 100%;
 }
 
 .left {
@@ -15,7 +15,11 @@ body {
 }
 
 .right {
-    width: 75vw;
+    width: 95vw;
+    position: relative;
+}
+.close {
+    display: none;
 }
 
 .home ul li {
@@ -48,8 +52,9 @@ body {
 }
 
 .library {
-    min-height: 25vw;
-    position: relative;
+    overflow-y: auto;
+    margin-top: 8px;
+    max-height: 15vw;
 }
 
 .library img[alt~="library"] {
@@ -65,10 +70,10 @@ body {
 .footer {
     display: flex;
     gap: 25px;
-    position: absolute;
     bottom: 0;
     flex-wrap: wrap;
     margin: 30px;
+    background-color: black;
 }
 
 .footer a {
@@ -80,12 +85,17 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 8px;
-    padding: 20px;
+    padding: 10px;
+    max-height: 20vw;
+    height: 4vw;
 }
 
 .navigator {
     display: flex;
     gap: 20px;
+}
+.hamburger {
+    display: none;
 }
 
 .LS-buttons {
@@ -94,19 +104,44 @@ body {
 }
 
 .login {
-    width: 80px;
-    height: 30px;
+    padding: 14px 29px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover {
+    font-size: 17px;
+
+}
+
+.signup {
+    color: grey;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup:hover {
+    font-size: 17px;
+    color: white;
 }
 
 .spotifyPlaylist h1 {
     padding: 10px 25px;
 }
-.cardContainer{
+
+.cardContainer {
     display: flex;
     flex-wrap: wrap;
     width: 75vw;
-    max-height: 30vw;
-    overflow: scroll;
+    height: 30vw;
+    overflow-y: auto;
+    position: relative;
 }
 
 .card {
@@ -114,18 +149,162 @@ body {
     margin: 5px 25px;
     background-color: #131313;
     padding: 15px;
+    position: relative;
 }
 
 .card img {
     object-fit: fill;
     width: 100%;
-    position: relative;
 }
 
 .svgButton svg {
     position: absolute;
     width: 50px;
-    bottom: 120px;
-    right: 665px;
+    bottom: 55px;
+    right: 25px;
     transition: 1s;
+}
+
+.playbar {
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    background-color: rgb(28, 69, 2);
+    width: 100%;
+    border-radius: 20px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 250px
+}
+
+.songButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.songButton button {
+    background-color: rgb(28, 69, 2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.songButton button:hover {
+    size: 25px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.songButton button:active {
+    transform: translateY(2px);
+}
+
+.songList {
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.songList ul {
+    margin-left: 5px;
+    list-style: none;
+    /* Remove default list styling */
+    padding-left: 0;
+    /* Remove default padding */
+}
+
+.songList ul li {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin-top: 13px;
+}
+
+.playNow button {
+    size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.playNow button:hover {
+    size: 25px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.playNow button:active {
+    transform: translateY(2px);
+}
+
+.seekbar {
+    height: 2px;
+    width: 98%;
+    background-color: white;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 12px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: 0.5s;
+}
+.buttonInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw
+}
+@media (max-width: 1200px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        background-color: black;
+        width: 50%;
+        height: 100%;
+    }
+    .library{
+        max-height: 70vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardContainer {
+        width: 90%;
+        min-height: 125vw;
+        max-height: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+    .container{
+        height: auto;
+        width: auto;
+    }
+    .header{
+        height: auto
+    }
 }
